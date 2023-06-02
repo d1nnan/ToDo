@@ -41,9 +41,10 @@ class IdExc(Exception):
     """Класс исключение, вызывается когда id невалиден."""
 
     def __init__(self, head="ToDoIDError", message="Bad ID!"):
-        super().__init__(message)
+        super().__init__()
         self.head = head
         self.message = message
+        self.f = 3333
 
 
 class ToDo:
