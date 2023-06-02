@@ -55,7 +55,7 @@ class ToDo:
         )
 
     def add_task(self):
-        """Функция, добавляющая дело."""
+        """Функция, добавляющая задание."""
 
         self.task_name = input("Введите имя задания: ")
         if len(self.task_name) == 0 or self.task_name.isspace():
