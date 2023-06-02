@@ -7,7 +7,11 @@ import json
 
 
 class MyEncoder(json.JSONEncoder):
-    """Класс кодировщика."""
+    """Класс    
+      кодировщика."""
+
+
+
 
     def default(self, tasks):
         if isinstance(tasks, ToDo):
@@ -100,7 +104,7 @@ class ToDo:
             print(row)
 
     def update_priority(self):
-        """Позволяет редактировать приоритет существующего задания."""
+        """Позволяет ре да к тиро вать прио ритет с ущест вующего зада ния."""
 
         self.task_id = int(input("Введите id задания: "))
         if self.task_id < 1:
@@ -163,7 +167,7 @@ class ToDo:
 
 
 def menu_controller(app: ToDo, user_input):
-    """Ответ на пользовательский ввод."""
+    """Ответ на пользовательский ввод....."""
 
     if user_input == 1:
         app.add_task()
