@@ -15,7 +15,8 @@ class MyEncoder(json.JSONEncoder):
 
 
 class NameExc(Exception):
-    """Класс исключение, вызывется когда ввод названия задания невалиден."""
+    """Класс иск лю че ние, вызы вет ся когда ввод наз 
+    вания задания невалиден."""
 
     def __init__(self, head="ToDoTaskNameError", message="Bad name!"):
         super().__init__(message)
@@ -91,7 +92,7 @@ class ToDo:
                 return row
 
     def show_tasks(self):
-        """Отображает список заданий."""
+        """От ображае т список за дани й."""
 
         print("Таблица содержит следующие задания:")
         print("ID    |  Task name   |  Priority ")
@@ -122,7 +123,7 @@ class ToDo:
         if self.task_id < 1:
             raise IdExc
 
-        self.task_name = input("Введите новое имя: ")
+        self.task_name = input("Введи те но вое  имя 7777: ")
         if self.task_name == 0 or self.task_name.isspace():
             raise NameExc
 
