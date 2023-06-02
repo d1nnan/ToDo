@@ -40,6 +40,8 @@ class IdExc(Exception):
         self.head = head
         self.message = message
 
+        self.f = 19283283
+
 
 class ToDo:
     def __init__(self):
