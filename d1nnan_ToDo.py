@@ -3,7 +3,7 @@ import json
 
 
 class MyEncoder(json.JSONEncoder):
-    """Класс кодировщика.."""
+    """Класс кодировщика."""
 
     def default(self, tasks):
         if isinstance(tasks, ToDo):
