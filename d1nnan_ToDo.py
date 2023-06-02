@@ -44,9 +44,7 @@ class IdExc(Exception):
         super().__init__()
         self.head = head
         self.message = message
-        self.f = 3333
-
-        self.f = 19283283
+        self.f = 54644645546
 
 
 class ToDo:
